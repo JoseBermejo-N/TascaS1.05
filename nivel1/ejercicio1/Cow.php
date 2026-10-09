@@ -1,8 +1,8 @@
 <?php
 
-class Cow extends Animals {
+class Cow extends Animal {
     
-    public function voiceAnimal(): string{
+    public function makeSound(): string{
         return $this->getName() . " the cow says: Muuuuu";
     }
 

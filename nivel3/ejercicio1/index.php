@@ -10,10 +10,11 @@ $email = new Email ("Testeando nueva cuenta de correo.");
 $letter = new OrdinaryMail ("Queridos Reyes Magos...");
 $sms = new Sms ("Envia GANAR al 31313.");
 
+$notifications = array ($email, $letter, $sms);
 
-$email->sendBy();
-$letter->sendBy();
-$sms->sendBy();
+foreach ($notifications as $notification) {
+    $notification->sendBy();
+}
 
 
 

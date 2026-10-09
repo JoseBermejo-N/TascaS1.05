@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Animals.php';
+require_once 'Animal.php';
 require_once 'Cat.php';
 require_once 'Dog.php';
 require_once 'Cow.php';
@@ -11,6 +11,6 @@ $dog = new Dog("Boby");
 $cow = new Cow("Betsy");
 
 //mostramos la onomatopeya de cada animal
-echo $cat->voiceAnimal() . "\n";
-echo $dog->voiceAnimal() . "\n";
-echo $cow->voiceAnimal() . "\n";
+echo $cat->makeSound() . "\n";
+echo $dog->makeSound() . "\n";
+echo $cow->makeSound() . "\n";

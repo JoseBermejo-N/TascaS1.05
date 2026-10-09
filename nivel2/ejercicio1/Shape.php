@@ -2,16 +2,9 @@
 
 abstract class Shape {
 
-    protected float $width;
-    protected float $height;
+   
+    abstract protected function getArea(): float;
 
-    public function __construct(float $width, float $height) {
-        $this->width = $width;
-        $this->height = $height;
-    }
-  
-    abstract protected function calculateArea(): float;
-
-    abstract public function showArea(): void;
+    abstract public function __toString(): string;
     
     }
