@@ -10,9 +10,7 @@ abstract class Shape {
         $this->height = $height;
     }
 
-    
     abstract protected function getArea(): float;
 
-    
     abstract public function __toString(): string;
     }
